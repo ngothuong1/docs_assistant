@@ -1,0 +1,8 @@
+langchain-core
+langchain-ollama
+langchain-chroma
+ollama
+python-dotenv
+pandas
+ragas
+chromadb
