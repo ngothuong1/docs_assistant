@@ -7,11 +7,11 @@ from dotenv import load_dotenv
 load_dotenv()
 @dataclass
 class AppConfig:
-    raw_docs_dir: Path
+    raw_docs_dir: Path = Path("data/raw_docs")
     output_dir: Path = Path("outputs")
     markdown_extensions: tuple[str, ...] = (".md", ".markdown")
     image_extensions: tuple[str, ...] = (".png", ".jpg", ".jpeg", ".webp", ".gif")
-    image_dir_names: tuple[str, ...] = ("images", "imgs", "assets", "media")
+    image_dir_names: tuple[str, ...] = ("images", "imgs", "assets", "media", "attachments")
     recursive: bool = True
     allowed_heading_levels: tuple[int, ...] = (1, 2, 3)
     min_chunk_chars: int = 400
